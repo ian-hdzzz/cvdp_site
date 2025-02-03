@@ -6,7 +6,14 @@ function Navbar() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);  // Detectar si es móvil
     const [menuOpen, setMenuOpen] = useState(false);  // Estado para controlar el menú
 
-
+    // Detectar cambio de tamaño de pantalla para actualizar `isMobile`
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     // Función para abrir/cerrar menú
     const toggleMenu = () => {
