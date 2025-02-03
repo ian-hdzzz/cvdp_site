@@ -18,13 +18,13 @@ function Navbar() {
             </div>
             <ul className={`nav-links ${isMobile ? 'active' : ''}`}>
                 <i onClick={toggleMenu} className={`fa-solid fa-x ${isMobile ? '' : 'hidden'}`}></i>
-                <li><Link to="/home">Inicio</Link></li>
-                <li><Link to="/asesorias">Asesoría experiencia profesional</Link></li>
-                <li><Link to="/practicas">Prácticas profesionales y empleo</Link></li>
-                <li><Link to="/empresas">¿Eres empresa?</Link></li>
-                <li><Link to="/recursos">Recursos</Link></li>
-                <li><Link to="/challenge">CVDP Challenge</Link></li>
-                <li><Link to="/conocenos">Conócenos</Link></li>
+                <li onClick={toggleMenu}><Link to="/home">Inicio</Link></li>
+                <li onClick={toggleMenu}><Link to="/asesorias">Asesoría experiencia profesional</Link></li>
+                <li onClick={toggleMenu}><Link to="/practicas">Prácticas profesionales y empleo</Link></li>
+                <li onClick={toggleMenu}><Link to="/empresas">¿Eres empresa?</Link></li>
+                <li onClick={toggleMenu}><Link to="/recursos">Recursos</Link></li>
+                <li onClick={toggleMenu}><Link to="/challenge">CVDP Challenge</Link></li>
+                <li onClick={toggleMenu}><Link to="/conocenos">Conócenos</Link></li>
             </ul>
           
         </nav>

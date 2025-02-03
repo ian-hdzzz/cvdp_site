@@ -40,15 +40,14 @@
     box-shadow: 5px 5px 18px rgb(189, 189, 189);
  }
  .info{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-    align-items: flex-start;
+    display: block;
     margin-left: 20px;
     text-align: left;
  }
  .nombre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-weight: bold;
     text-align: left;
     font-size: 24px;
@@ -57,8 +56,8 @@
  }
 
  @media screen and (max-width:768px){
-    h1{
-        font-size: 24px;
+    .contenedor h1{
+        font-size: 3.5rem;
     }
     .gradient{
         height: 13px;
@@ -80,5 +79,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    .nombre{
+      margin: 0;
+    }
+    .info p{
+      margin: 20px 0;
     }
  }

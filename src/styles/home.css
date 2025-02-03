@@ -61,13 +61,15 @@
     border-radius: 10px;
     background: linear-gradient(to right, #12C1E8, #C172ED);;
   }
-h1{
-    font-size:300px;
+
+.title h1{
+    font-size: 8rem;
     font-family: var(--fuente-primaria);
-  }
+}
 
 h2{
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size:1rem;
     font-family: var(--fuente-primaria);
 }
@@ -257,7 +259,7 @@ h2{
         justify-content: center;
         width: 80%;
     }
-    h1{
+    .title h1{
         font-size: 22vw;
     }
     .gradient{
