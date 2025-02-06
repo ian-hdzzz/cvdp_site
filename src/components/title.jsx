@@ -4,7 +4,7 @@ const Title = ({ text }) => {
     return(
         <div className="contenedor-title">
           <h1>{text}</h1>
-          <div className="gradient"></div>
+          <div className="gradient-title"></div>
         </div>
     )
 }

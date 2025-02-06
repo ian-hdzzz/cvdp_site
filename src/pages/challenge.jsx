@@ -9,7 +9,7 @@ import teus4 from '../lib/img/teus4.png'
 const Challenge = () => {
     return (
       <div className="contenedor-challenge">
-        <Title text="CVDP Challenge" />
+        <Title text="CVDP Challenge"/>
         <div className="target-challenge uno">
           <div className="info">
             <h1>¿En qué consiste?</h1>

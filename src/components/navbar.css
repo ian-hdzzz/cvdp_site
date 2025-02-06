@@ -101,20 +101,28 @@
     .nav-links {
       display: none; 
       width: 100%;  
-
+      
     }
 
     .nav-links.active {
+      width: 65%;
       display: flex; 
       flex-direction: column;
       text-align: left;
       position: fixed;
+      justify-content: start;
+      gap: 0;
     }
 
-
+    .nav-links.active i{
+      margin: 55px 0;
+    }
     .nav-links.active li{
       width: 100%;
       margin-left: 80px;
+      padding:10px  0;
+      
+
     }
     .nav-links.active a{
       text-align: left;
@@ -124,7 +132,7 @@
     .fa-x{
       position: relative;
       top: -5px;
-      left: -115px;
+      left: -70px;
     }
     
   }

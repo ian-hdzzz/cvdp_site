@@ -9,19 +9,23 @@
   }
 
   .contenedor-title{
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
   }
   .contenedor-title h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 50px;
+    text-align: center;
     color: var(--var-color-blue);
   }
-  .gradient{
-    width: 30%;
+  .contenedor-title > .gradient-title{
+    margin: 10px 0;
+    width: 110%;
     height: 15px;
     border-radius: 10px;
     background: linear-gradient(to right, #12C1E8, #C172ED);
