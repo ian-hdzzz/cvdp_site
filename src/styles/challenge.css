@@ -1,0 +1,86 @@
+
+.target-challenge{
+    padding: 20px;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.target-challenge .info{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.target-challenge .info > a{
+   
+    color: #fff;
+}
+.target-challenge .info> h1{
+    font-size: 3rem;
+    color: #fff;
+}
+.target-challenge .info> p{
+    margin: 30px auto;
+    font-size: 1.3rem;
+}
+.imagenes{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.img-descriptiva {
+    width: 380px;
+    height: 260px;
+    margin: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.teus4{
+    width: 220px;
+    height: auto;
+}
+.teus3{
+    margin-top: -10px;
+    width: 200px;
+    height: auto;
+}
+.teus2{
+    width: 160px;
+    height: auto;
+}
+.uno{
+    background: rgb(0, 62, 168);
+}
+.dos{
+    background: rgb(0, 120, 233);
+}
+.tres{
+    background: rgb(75, 177, 255);
+}
+@media screen  and (max-width:768px) {
+    .target-challenge .info {
+        width: 100%;
+ 
+    }
+    .target-challenge .info p{
+        margin: 20px auto;
+        text-align: justify;
+    }
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}

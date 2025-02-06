@@ -62,8 +62,8 @@
     background: linear-gradient(to right, #12C1E8, #C172ED);;
   }
 
-.title h1{
-    font-size: 8rem;
+.section-1 .title > h1{
+    font-size: 10rem;
     font-family: var(--fuente-primaria);
 }
 
@@ -259,7 +259,7 @@ h2{
         justify-content: center;
         width: 80%;
     }
-    .title h1{
+    .section-1 .title > h1{
         font-size: 22vw;
     }
     .gradient{
@@ -287,14 +287,23 @@ h2{
         text-align: center;
     }
     .follow > img{
-        width: 10%;
+        width: 11%;
     }
     .bin{
         margin: 20px auto;
-        width: 40%;
+        width: 45%;
     }
     .followButton{
-        padding: 10px 25px;
+        margin-left: -20px;
+        padding: 10px 20px;
+    }
+
+    .follow a{
+        font-size: 1rem;
+    }
+
+    .follo .user{
+        right: -10px;
     }
     .info{
         width: 90%;

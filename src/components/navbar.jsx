@@ -32,7 +32,7 @@ function Navbar() {
             <div className="menu" onClick={toggleMenu}>
                 <i className={`fa-solid fa-bars ${menuOpen ? 'hidden' : ''}`}></i>
             </div>
-            <div className="logo">CVDP</div>
+            <div className="logo"> <Link to="/home" className="logo-link">CVDP</Link></div>
             <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
                 <i onClick={toggleMenu} className={`fa-solid fa-x ${menuOpen ? '' : 'hidden'}`}></i>
                 <li onClick={closeMenuOnMobile}><Link to="/home">Inicio</Link></li>

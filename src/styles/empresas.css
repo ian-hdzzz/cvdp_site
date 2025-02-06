@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.targets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.targets img{
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 18px rgba(189, 189, 189, 0.784);
+}
+.targets .info h1{
+    font-size: 3rem;
+}
+.info p{
+    margin-top: 50px;
+    line-height: 1.2;
+}
+a{
+    color: rgb(0, 170, 255);
+}
+.button{
+    width: 30%;
+    height: auto;
+    padding: 15px 55px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #12C1E8, #EB1FE8);
+    display: flex;
+    justify-content: center;
+}
+.button a{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}

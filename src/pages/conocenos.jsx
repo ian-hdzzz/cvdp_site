@@ -4,12 +4,12 @@ import adri from '../lib/img/adri.png'
 import stephano from '../lib/img/stephano.png'
 import clem from '../lib/img/clem.png'
 import '../styles/conocenos.css'
+import Title from  '../components/title'
 const Conocenos = () => {
     return (
 
       <div className="contenedor">
-        <h1>Conócenos</h1>
-        <div className="gradient"></div>
+        <Title text="Conócenos"/> 
         <div className="target">
           <img src={adri} alt="" />
           <div className="info">

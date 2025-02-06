@@ -1,5 +1,11 @@
+import Title from  '../components/title'
+
 const Practicas = () => {
-    return <h1>Prácticas profesionales y empleo</h1>;
+    return (
+      <div className="contenedor">
+        <Title text="Prácticas profesionales y empleo" /> 
+      </div>
+    );
   };
   
   export default Practicas;

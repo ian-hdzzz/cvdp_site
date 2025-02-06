@@ -5,6 +5,7 @@
 }
 :root{
     --fuente-primaria: 'gotham', sans-serif;
+    --var-color-blue: #001B50;
   }
 
   .contenedor{
@@ -12,17 +13,6 @@
     display: flex;
     justify-content: flex-start;
     text-align: start;
-  }
-  .contenedor h1{
-    font-size: 4rem;
-    margin-top: 50px;
-  }
-  .gradient{
-    width: 30%;
-    height: 15px;
-    border-radius: 10px;
-    background: linear-gradient(to right, #12C1E8, #C172ED);
-    margin-bottom: 30px;
   }
  .target{
     width: 80%;

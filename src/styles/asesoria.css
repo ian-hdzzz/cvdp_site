@@ -1,0 +1,440 @@
+
+
+.contenedor-asesoria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget-asesoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background:none;
+    margin: 50px auto;
+}
+.widget-asesoria .bin{
+    width: 280px;
+    height: 200px;
+    box-shadow: 5px 5px 18px rgb(189, 189, 189);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.widget-asesoria .bin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.widget-asesoria .info{
+    width: 650px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 18px rgb(189, 189, 189);
+    border-radius: 20px;
+}
+
+.widget-asesoria .info > h1{
+    margin: 10px auto;
+}
+
+.widget-asesoria .info p{
+    margin-top: 25px;
+}
+.asesoria-title{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asesoria-title >h1{
+    font-size: 3rem;
+}   
+.asesoria-title .gradient{
+    margin: 10px;
+    width: 500px;
+}
+.contenedor-asesores{
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor-asesoria > h1{
+    font-size: 2rem;
+    margin: 50px auto;
+}
+.asesor{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 700px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 18px rgb(189, 189, 189);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.asesor > h2{
+    margin: 30px auto;
+    font-size: 1.6rem;
+    color: rgb(1, 11, 79);
+}
+.asesor > img{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+}
+.features{
+    margin: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.features li{
+    justify-content: flex-start;
+}
+
+.button-agendar{
+    margin-bottom: 30px;
+    width: 70%;
+    height: auto;
+    background: linear-gradient(to right, #12C1E8, #C172ED);
+    border-radius: 20px;
+    padding: 20px 40px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.button-agendar a{
+    margin: auto;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    color:inherit;
+}
+.button-agendar:hover{
+    cursor: pointer;
+}
+.contenedor-materias{
+
+    width: 100%;
+    background: #001B50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+
+}
+.contenedor-materias h1{
+    margin: auto;
+    margin-left: 90px;
+    font-size: 2.3rem;
+
+}
+.contenedor-materias >  .gradient{
+    width: 40%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #12C1E8, #ff03d1);
+    margin:20px auto;
+    margin-left: 90px;
+
+  }
+.materias{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    margin-left: -70px;
+}
+
+.materia{
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+   
+}
+.materia .info{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.materia-uno{
+    display: block;
+    position: relative;
+}
+.materia .teus2{
+    position: absolute;
+    right: -90px;
+    bottom: 10px;
+    height: 135px;
+}
+ .materia-dos{
+    margin-left: -10px;
+    display: block;
+    position: relative;
+}
+.materia .teus3{
+    position: absolute;
+    right:-85px;
+    bottom: 0;
+    height: 150px;
+}
+.materia .info h2{
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.materia .info p{
+    margin: 0;
+}
+.materia > img{
+    width: auto;
+    margin: 0;
+}
+
+.contenedor-extras{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedor-extras >h1{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: var(--var-color-blue);
+
+}
+.contenedor-extras .gradient{
+    width: 380px; 
+    margin: auto;
+}
+.contenedor-targetTec{
+    display: flex;
+    margin: auto;
+}
+.target-semanaTec{
+    margin: 50px;
+    padding: 30px 20px;
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 18px rgb(189, 189, 189);
+    border-radius: 20px;
+}
+.target-semanaTec .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.imgSemanaTec{
+    width:280px;
+    height: 250px;
+}
+.imgSemanaTec img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.target-semanaTec .info >h2{
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    color: var(--var-color-blue);
+}
+.target-semanaTec .info > p{
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.emprendimiento .gradient{
+    width: 700px;
+}
+.premiosLife{
+    width: 100%;
+    background: var(--var-color-blue);
+    display: flex;
+    color: #fff;
+    padding: 50px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.premiosLife .lifeImg{
+    width: 450px;
+    height: 280px;
+    
+}
+.premiosLife .gradient{
+    width: 260px;
+}
+.lifeImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+@media screen and (max-width:768px){
+    .widget-asesoria{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+    .widget-asesoria .bin{
+        width: 89%;
+        height: 200px;
+        margin: 0 auto 20px auto;
+    }
+    .widget-asesoria .info{
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .asesoria-title{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .asesoria-title h1{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 20px;
+    }
+    .asesoria-title .gradient{
+        width: 100%;
+    }
+    .contenedor-asesores{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .asesor{
+        width: 90%;
+        margin: 20px auto;
+
+    }
+    .contenedor-materias{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
+        padding: 60px 0;
+    }
+    .contenedor-materias > h1{
+        text-align: center;
+        font-size: 2rem;
+        margin: 20px  40px;
+    }
+    .materia{
+        width: 90%;
+        margin: auto;
+    }
+    .materia .info{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .materia .info p{
+        text-align: justify
+    }
+    .materia .teus2{
+        position: static;
+        display: block;
+        margin:  20px auto;
+    }
+
+    .materia .teus3{
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+    .contenedor-materias > .gradient{
+        width: 70%;
+        margin: 0;
+    }
+    .materias{
+        flex-direction: column;
+        margin: auto;
+    }
+    .contenedor-extras{
+        width: 100vw;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .semanaTec > h1{
+        font-size: 2.5rem;
+    }
+    .semanaTec > .gradient{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .contenedor-targetTec{
+        width: 100%;
+        flex-direction: column;
+    }
+    .target-semanaTec{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .emprendimiento h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .emprendimiento .gradient{
+        width: 80%;
+        margin-top: 0;
+        margin-bottom:30px ;
+    }
+    .premiosLife{
+        flex-direction: column;
+        margin: auto;
+    }
+    .premiosLife .info{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .premiosLife .lifeImg{
+        width: 280px;
+        height: 200px;
+    }
+    .premiosLife .gradient {
+        margin: 20px 0;
+    }
+    .premiosLife p{
+    text-align: justify;
+        
+    }
+}
