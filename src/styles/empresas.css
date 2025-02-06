@@ -11,28 +11,36 @@
     justify-content: center;
     align-items: center;
 }
-.targets{
+.targets-empresas{
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.targets img{
-    width: 450px;
+.targets-empresas .imgEmpresas{
+    margin-top: -20px;
+    width: 350px;
     height: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 18px rgba(189, 189, 189, 0.784);
 }
-.targets .info h1{
+.targets-empresas .info h1{
     font-size: 3rem;
 }
-.info p{
-    margin-top: 50px;
+.targets-empresas .info p{
+    margin-top: 30px;
+    margin-bottom: 0;
     line-height: 1.2;
 }
+.texto-info p{
+    margin: 0 auto;
+}
 a{
+    margin: 0;
     color: rgb(0, 170, 255);
 }
-.button{
+.button-empresas{
+    margin: 100px 0 50px 0;
     width: 30%;
     height: auto;
     padding: 15px 55px;
@@ -41,9 +49,92 @@ a{
     display: flex;
     justify-content: center;
 }
-.button a{
+.button-empresas a{
     color: #fff;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+.video-empresas{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-empresas video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+.video-empresas > h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--var-color-blue);
+}
+
+@media screen and (max-width:768px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .targets-empresas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .targets-empresas .imgEmpresas{
+        margin: 0;
+        width: 300px;
+        height: auto;
+    }
+    .info{
+        display: flex;
+        flex: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .info > h1{
+        font-size: 1.9rem;
+    }
+    .info .texto-info{
+        margin: auto;
+        width: 100%;
+        text-align: justify;
+    }
+    .targets-empresas .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .targets-empresas .info a{
+        justify-content: center;
+    
+    }
+    .button-empresas{
+        margin: 10px ;
+        padding: 20px;
+        width: 80%;
+    }
+    .button-empresas a{
+        font-size: 1.5rem;
+    }
+    .video-empresas h2{
+        font-size: 2rem;
+    }
 }

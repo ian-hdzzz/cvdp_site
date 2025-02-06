@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from "../src/components/navbar";
 import {  Routes, Route } from 'react-router-dom';
 import Home from './pages/home'; // Importar el componente Home
@@ -12,7 +12,10 @@ import './App.css';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
 
   return (
     <>

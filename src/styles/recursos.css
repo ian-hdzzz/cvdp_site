@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.contenedor{
+.contenedor-recursos{
     width: 100%;
     height: auto;
     display: flex;
@@ -12,11 +12,13 @@
     align-items: center;
 }
 .targets{
+    margin: 20px auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .targets img{
+    margin-top: 35px;
     width: 450px;
     height: auto;
     border-radius: 20px;
@@ -40,6 +42,8 @@ a{
     width: 80%;
 }
 .bolsaTrabajo h1{
+    margin: 40px auto;
+    text-align: center;
     font-size: 3rem;
 }
 .bolsaTrabajo p{
@@ -76,6 +80,8 @@ a{
     align-items: center;
 }
 .plataformas h1{
+    text-align: center;
+    margin: 40px auto;
     font-size: 3rem;
 }
 .botones{
@@ -90,4 +96,60 @@ a{
 }
 .botones > .widget{
     width: 15%;
+}
+
+@media screen and (max-width:768px) {
+    .contenedor-recursos > .targets > .info > h1{
+        font-size: 2rem;
+    }
+    .targets{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .targets img{
+        margin: auto;
+        width: 300px;
+    }
+    .targets .info >h1{
+        font-size: 2.5rem;
+ 
+    }
+    .targets .info p{
+        text-align: justify;
+    }
+    .bolsaTrabajo {
+        margin: auto 30px;
+        width: 86%;
+        text-align: center;
+    }
+    .bolsaTrabajo > h1{
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+    }
+    .bolsaTrabajo p{
+        text-align: justify;
+        margin: 20px 35px;
+    }
+    .plantillas{
+        width: 100%;
+        margin: 40px auto;
+    }
+    .plantillas .widget{
+        margin: 0;
+        width: 80%;
+    }
+    .plataformas{
+        text-align: center;
+    }
+    .plataformas > h1{
+        margin: 30px auto;
+        font-size: 2rem;
+    }
+    .botones .widget{
+        width: 40%;
+    }
 }

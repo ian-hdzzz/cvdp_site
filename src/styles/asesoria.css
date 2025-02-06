@@ -46,6 +46,7 @@
     margin-top: 25px;
 }
 .asesoria-title{
+    width: 70%;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -56,7 +57,7 @@
 }   
 .asesoria-title .gradient{
     margin: 10px;
-    width: 500px;
+    width: auto;
 }
 .contenedor-asesores{
     margin: 50px auto;
@@ -128,7 +129,6 @@
     cursor: pointer;
 }
 .contenedor-materias{
-
     width: 100%;
     background: #001B50;
     color: #fff;
@@ -140,6 +140,7 @@
 
 }
 .contenedor-materias h1{
+    width: 100%;
     margin: auto;
     margin-left: 90px;
     font-size: 2.3rem;
@@ -303,7 +304,7 @@
 }
 @media screen and (max-width:768px){
     .widget-asesoria{
-        width: 90%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -316,6 +317,7 @@
         margin: 0 auto 20px auto;
     }
     .widget-asesoria .info{
+        padding-bottom: 50px;
         width: 90%;
         height: auto;
         margin: auto;
@@ -353,6 +355,7 @@
         text-align: center;
         font-size: 2rem;
         margin: 20px  40px;
+        width: 80%;
     }
     .materia{
         width: 90%;

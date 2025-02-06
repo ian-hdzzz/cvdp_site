@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
-import React, { useState, useEffect } from 'react';
-import './navbar.css';
+import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import "./navbar.css";
 
 function Navbar() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);  // Detectar si es móvil
-    const [menuOpen, setMenuOpen] = useState(false);  // Estado para controlar el menú
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+    const [visible, setVisible] = useState(true);
 
-    // Detectar cambio de tamaño de pantalla para actualizar `isMobile`
+    // Detectar cambio de tamaño de pantalla
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 768);
@@ -15,33 +17,54 @@ function Navbar() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    // Manejo de scroll para ocultar navbar cuando baja y mostrarlo cuando sube
+    useEffect(() => {
+        const handleScroll = () => {
+            setVisible(window.scrollY < lastScrollY);
+            setLastScrollY(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
+
     // Función para abrir/cerrar menú
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+    const toggleMenu = () => setMenuOpen(!menuOpen);
 
     // Función para cerrar menú solo si es móvil
     const closeMenuOnMobile = () => {
-        if (isMobile) {
-            setMenuOpen(false);
-        }
+        if (isMobile) setMenuOpen(false);
     };
 
     return (
-        <nav className="nav">
+        <nav className={`nav ${visible ? "visible" : "hidden-nav"}`}>
             <div className="menu" onClick={toggleMenu}>
-                <i className={`fa-solid fa-bars ${menuOpen ? 'hidden' : ''}`}></i>
+                <i className={`fa-solid fa-bars ${menuOpen ? "hidden" : ""}`}></i>
             </div>
-            <div className="logo"> <Link to="/home" className="logo-link">CVDP</Link></div>
-            <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-                <i onClick={toggleMenu} className={`fa-solid fa-x ${menuOpen ? '' : 'hidden'}`}></i>
-                <li onClick={closeMenuOnMobile}><Link to="/home">Inicio</Link></li>
-                <li onClick={closeMenuOnMobile}><Link to="/asesorias">Asesoría experiencia profesional</Link></li>
-                <li onClick={closeMenuOnMobile}><Link to="/practicas">Prácticas profesionales y empleo</Link></li>
-                <li onClick={closeMenuOnMobile}><Link to="/empresas">¿Eres empresa?</Link></li>
-                <li onClick={closeMenuOnMobile}><Link to="/recursos">Recursos</Link></li>
-                <li onClick={closeMenuOnMobile}><Link to="/challenge">CVDP Challenge</Link></li>
-                <li onClick={closeMenuOnMobile}><Link to="/conocenos">Conócenos</Link></li>
+            <div className="logo">
+                <NavLink to="/home" className="logo-link">CVDP</NavLink>
+            </div>
+            <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+                <i onClick={toggleMenu} className={`fa-solid fa-x ${menuOpen ? "" : "hidden"}`}></i>
+                <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/home" className={({ isActive }) => (isActive ? "active" : "")}>Inicio</NavLink>
+                </li>
+                <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/asesorias" className={({ isActive }) => (isActive ? "active" : "")}>Asesoría experiencia profesional</NavLink>
+                </li>
+                {/* <li onClick={closeMenuOnMobile}><NavLink to="/practicas">Prácticas profesionales y empleo</NavLink></li> */}
+                <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/empresas" className={({ isActive }) => (isActive ? "active" : "")}>¿Eres empresa?</NavLink>
+                </li>
+                <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/recursos" className={({ isActive }) => (isActive ? "active" : "")}>Recursos</NavLink>
+                </li>
+                <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/challenge" className={({ isActive }) => (isActive ? "active" : "")}>CVDP Challenge</NavLink>
+                </li>
+                <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/conocenos" className={({ isActive }) => (isActive ? "active" : "")}>Conócenos</NavLink>
+                </li>
             </ul>
         </nav>
     );
