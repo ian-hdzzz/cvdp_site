@@ -52,7 +52,7 @@ function Navbar() {
                 <li onClick={closeMenuOnMobile}>
                     <NavLink to="/asesorias" className={({ isActive }) => (isActive ? "active" : "")}>Asesoría experiencia profesional</NavLink>
                 </li>
-                {/* <li onClick={closeMenuOnMobile}><NavLink to="/practicas">Prácticas profesionales y empleo</NavLink></li> */}
+                <li onClick={closeMenuOnMobile}><NavLink to="/practicas">Prácticas profesionales y empleo</NavLink></li>
                 <li onClick={closeMenuOnMobile}>
                     <NavLink to="/empresas" className={({ isActive }) => (isActive ? "active" : "")}>¿Eres empresa?</NavLink>
                 </li>

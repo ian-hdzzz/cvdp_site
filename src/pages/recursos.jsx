@@ -3,6 +3,7 @@ import Title from  '../components/title'
 import cv from '../lib/img/cv.png'
 import linkedin from '../lib/img/linkedin.png'
 import entrevista from '../lib/img/entrevista.png'
+import video4 from '../lib/img/video4.mp4'
 const Recursos = () => {
     return (
       <div className="contenedor-recursos">
@@ -26,12 +27,12 @@ const Recursos = () => {
           <p>Te invitamos a consultar la <a href="">Bolsa de Trabajo</a> para conocer todos los recursos disponibles que tenemos para ti, así como formatos
           de CV especializados para cada carrera.</p>
           <div data-aos="fade-up" className="plantillas">
-            <div className="widget"><a href="https://drive.google.com/file/d/11JUJr2-QgNOBDgAu9dao3McygP-L_MFg/view">Plantilla CV en Inglés</a></div>
-            <div className="widget"><a href="https://drive.google.com/file/d/1FgVN-DjC2HxzQTgqA4UrlSHB7qjrh0jH/view">Plantilla CV - Informática</a></div>
-            <div className="widget"><a href="https://drive.google.com/file/d/1uyR65N-BsyoHTkn9hdXiQQmnWMwAmueW/view">Plantilla CV - Industrias Creativas</a></div>
-            <div className="widget"><a href="https://drive.google.com/file/d/1kfJ5QGaudeuWMe-d28ypvN6aQCCME_7s/view">Plantilla CV - Investigadores</a></div>
-            <div className="widget"><a href="https://drive.google.com/file/d/1OR1yFs6SQu7JDMS8U8UmdaxG54gV2MRf/view">Plantilla CV - Recién Egresado</a></div>
-            <div className="widget"><a href="https://drive.google.com/file/d/1ep3GvdzHEUo0osMRggWcxC6Nugz-u5ww/view">Plantilla CV - Medicina</a></div>
+            <div className="widget uno"><a href="https://drive.google.com/file/d/11JUJr2-QgNOBDgAu9dao3McygP-L_MFg/view">Plantilla CV en Inglés</a></div>
+            <div className="widget dos"><a href="https://drive.google.com/file/d/1FgVN-DjC2HxzQTgqA4UrlSHB7qjrh0jH/view">Plantilla CV - Informática</a></div>
+            <div className="widget tres"><a href="https://drive.google.com/file/d/1uyR65N-BsyoHTkn9hdXiQQmnWMwAmueW/view">Plantilla CV - Industrias Creativas</a></div>
+            <div className="widget cuatro"><a href="https://drive.google.com/file/d/1kfJ5QGaudeuWMe-d28ypvN6aQCCME_7s/view">Plantilla CV - Investigadores</a></div>
+            <div className="widget cinco"><a href="https://drive.google.com/file/d/1OR1yFs6SQu7JDMS8U8UmdaxG54gV2MRf/view">Plantilla CV - Recién Egresado</a></div>
+            <div className="widget seis"><a href="https://drive.google.com/file/d/1ep3GvdzHEUo0osMRggWcxC6Nugz-u5ww/view">Plantilla CV - Medicina</a></div>
           </div>
         </div>
         <div data-aos="fade-up" className="plataformas">
@@ -80,8 +81,15 @@ const Recursos = () => {
             <br />
             <br/>Consulta el siguiente <a href="https://drive.google.com/file/d/1ePb2uDJP8XddZMo3XTC6oXfBSkrrhaNF/view">video informativo</a> para conocer más sobre la herramienta. </p>
           </div>
-
         </div>
+           <div data-aos="fade-up"  className="video-empresas">
+              <h2>Big Interview</h2>
+                <video width="100%" controls>
+                  <source src={video4}type="video/mp4" />
+                  Tu navegador no soporta el video.
+                </video>
+                  
+            </div>
       </div>
     );
   };

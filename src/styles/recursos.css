@@ -50,6 +50,24 @@ a{
     margin: 20px auto;
     font-size: 1.25rem;
 }
+.bolsaTrabajo .plantillas .uno{
+    color: #ff6435;
+}
+.bolsaTrabajo .plantillas .dos{
+   background: #46cb3f;
+}
+.bolsaTrabajo .plantillas .tres{
+   background: #2088ea;
+}
+.bolsaTrabajo .plantillas .cuatro{
+   background: #9a2bc6;
+}
+.bolsaTrabajo .plantillas .cinco{
+   background: #dd3c3c;
+}
+.bolsaTrabajo .plantillas .seis{
+   background: #f8c74b;
+}
 .plantillas{
     width: 100%;
     display: flex;
