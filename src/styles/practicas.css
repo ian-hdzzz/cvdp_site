@@ -1,0 +1,102 @@
+.imgPracticas{
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+    margin-bottom: 40px;
+}
+.img-item{
+  
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.img-item img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedor-practicas{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.contenedor-practicas .widget{
+    background: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    border-radius: 30px;
+}
+.contenedor-practicas .imgPracticas{
+    width: 50%;
+    height: auto;
+    margin: 0;
+}
+.contenedor-practicas .imgPracticas img{
+    width: 100%;
+}
+.contenedor-practicas .infoPracticas{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 50%;
+    height: auto;
+    padding: 1% 0;
+    padding-left: 40px;
+}
+.contenedor-practicas .infoPracticas h1{
+    font-size: 45px;
+    margin: 50px 0;
+}
+.contenedor-practicas .infoPracticas p{
+    text-align: justify;
+    font-size: 23px;
+    margin: 40px 50px 0 0;
+
+}
+.contenedor-practicas .infoPracticas span{
+    font-weight:bold;
+}
+.contenedor-practicas .infoPracticas a{
+    width: ;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 10px 20px 20px;
+    font-weight: 900;
+    font-size: 23px;
+    margin-top: 40px;
+
+}
+.contenedor-practicas .infoPracticas i{
+    color: #000;
+    margin-left: 20px;
+}
+.contenedor-practicas .uno{
+    background: #470079;  
+}
+.contenedor-practicas .infoPracticas .uno{
+    color: #C10CE0;
+}
+.contenedor-practicas .dos{
+    background: #890300;
+}
+.contenedor-practicas .infoPracticas .dos{
+    color: #FF2104;
+}
+.contenedor-practicas .tres{
+    background:  #002754;
+}
+.contenedor-practicas .infoPracticas .tres{
+    color: #01ABFF;
+}
+.contenedor-practicas .cuatro{
+    background: #008414;
+}
+.contenedor-practicas .infoPracticas .cuatro{
+    color: #008414;
+}
