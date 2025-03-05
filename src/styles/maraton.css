@@ -1,0 +1,87 @@
+.contenedor-targets{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.target-maraton{
+    width: 22%;
+    height: auto;
+    color: #fff;
+    background: linear-gradient(165deg, #002f55, #8600bb);
+    border-radius: 30px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.target-maraton .contacto{
+    width: 30%;
+    text-align: center;
+}
+.target-maraton .empleo, .target-maraton .practicas{
+    width: 75%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.target-maraton:hover{
+    transform: scale(1.02); /* Aumenta el tamaño un 10% */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); /* Agrega sombra */
+    cursor: pointer;
+
+}
+.target-maraton h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+} 
+.target-maraton div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.target-maraton div > ul{
+    display: block;
+    text-align: left;
+}
+.empresa > p{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .contenedor-targets{
+        display: flex;
+        flex-direction: column;
+    }
+    .target-maraton{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        padding: 20px auto;
+        padding-left: 40px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .target-maraton .contacto{
+        width: 75%;
+    text-align: center;
+    }
+    .target-maraton .empleo, .target-maraton .practicas{
+    width: 75%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
