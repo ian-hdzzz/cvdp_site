@@ -56,8 +56,9 @@ function Navbar() {
                     <NavLink to="/maraton" className={({ isActive }) => (isActive ? "active" : "")}>Maratón de oportunidades laborales</NavLink>
                 </li> */}
                 {/* <li onClick={closeMenuOnMobile}>
-                    <NavLink className={({ isActive }) => (isActive ? "active" : "")} href="https://queretarocvdp.my.canva.site/practicas" >Prácticas profesionales y empleo</NavLink></li>
-                <li onClick={closeMenuOnMobile}> */}
+                    <NavLink className={({ isActive }) => (isActive ? "active" : "")} href="https://queretarocvdp.my.canva.site/practicas" >Prácticas profesionales y empleo</NavLink>
+                    // </li> */}
+                <li onClick={closeMenuOnMobile}>
                     <NavLink to="/empresas" className={({ isActive }) => (isActive ? "active" : "")}>¿Eres empresa?</NavLink>
                 </li>
                 <li onClick={closeMenuOnMobile}>
