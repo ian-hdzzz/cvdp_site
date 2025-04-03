@@ -87,20 +87,6 @@ const Asesoria = () => {
           <div className="gradient"></div>
         </div>
         <div data-aos="fade-up" className="contenedor-asesores">
-          <div data-aos="fade-up" className="asesor">
-            <h2>Clemente García</h2>
-            <img src={clem} alt="" />
-            <div className="features">
-
-            <li>Revisión de CV</li>
-            <li>Diseño de portafolio</li>
-            <li>Marca personal</li>
-            <li>Perfil de LinkedIn</li>
-            <li>Prácticas de entrevista laboral</li>
-            <li>Plataformas para la búsqueda de empleo</li>
-            </div>
-            <div className="button-agendar"><a href="https://cvdp-clemente.youcanbook.me">AGENDAR</a></div>
-          </div>
           <div data-aos="fade-up"  className="asesor">
             <h2>Lisbeth Sevilla</h2>
             <img src={lis} alt="" />
