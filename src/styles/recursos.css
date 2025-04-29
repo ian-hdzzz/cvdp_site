@@ -115,7 +115,11 @@ a{
 .botones > .widget{
     width: 15%;
 }
+.video-empresas .video{
+    margin-top: 20px;
+    margin-bottom: 50px;
 
+}
 @media screen and (max-width:768px) {
     .contenedor-recursos > .targets > .info > h1{
         font-size: 2rem;

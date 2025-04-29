@@ -4,6 +4,8 @@ import cv from '../lib/img/cv.png'
 import linkedin from '../lib/img/linkedin.png'
 import entrevista from '../lib/img/entrevista.png'
 import video4 from '../lib/img/video4.mp4'
+import video2 from '../lib/img/video2.mp4'
+import video3 from '../lib/img/video3.mp4'
 const Recursos = () => {
     return (
       <div className="contenedor-recursos">
@@ -84,12 +86,23 @@ const Recursos = () => {
         </div>
            <div data-aos="fade-up"  className="video-empresas">
               <h2>Big Interview</h2>
-                <video width="100%" controls>
+                <video className="video" width="100%" controls>
                   <source src={video4}type="video/mp4" />
                   Tu navegador no soporta el video.
-                </video>
-                  
+                </video>   
+                <h2>¿Cómo ingresar a bolsa de trabajo?</h2>
+                          <video className="video" width="100%" controls>
+                            <source src={video2}type="video/mp4" />
+                            Tu navegador no soporta el video.
+                          </video>
+                 <h2>Oportunidades en GoinGlobal</h2>
+                          <video  className="video" width="100%" controls>
+                            <source src={video3}type="video/mp4" />
+                            Tu navegador no soporta el video.
+                          </video> 
             </div>
+            
+            
       </div>
     );
   };
