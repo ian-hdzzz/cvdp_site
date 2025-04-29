@@ -38,22 +38,7 @@ const Empresa = () => {
                   </div>
         </div>
         <div data-aos="fade-up" className="button-empresas"><a href="https://lisbethsevilla-coaching.youcanbook.me/">AGENDAR UNA CITA</a></div>
-        <div data-aos="fade-up" className="video-empresas">
-            <h2>¿Cómo ingresar a bolsa de trabajo?</h2>
-          <video width="100%" controls>
-            <source src={video2}type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
         
-        </div>
-        <div data-aos="fade-up"  className="video-empresas">
-            <h2>Oportunidades en GoinGlobal</h2>
-          <video width="100%" controls>
-            <source src={video3}type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        
-        </div>
       </div>
     );
   };
