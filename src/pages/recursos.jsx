@@ -1,4 +1,5 @@
 import '../styles/recursos.css';
+import '../styles/becas.css';
 import Title from  '../components/title'
 import cv from '../lib/img/cv.png'
 import linkedin from '../lib/img/linkedin.png'
@@ -54,6 +55,26 @@ const Recursos = () => {
             <div className="widget"><a href="https://www.freelancer.com">Freelancer</a></div>
             <div className="widget"><a href="https://www.linkedin.com/company/linkit-hr/">LinkIT</a></div>
           </div>
+        </div>
+
+        {/* Sección de Becas Internacionales */}
+        <div data-aos="fade-up" className="becas becas-minimal">
+          <h1 className="becas-titulo">Becas Internacionales</h1>
+          <p className="becas-descripcion">Explora estas 12 becas internacionales a las que puedes postularte para continuar tus estudios en el extranjero:</p>
+          <ol className="becas-lista">
+            <li><a className="beca-link" href="https://lnkd.in/ggS8HzTk" target="_blank" rel="noopener noreferrer">DAAD Scholarship Germany</a></li>
+            <li><a className="beca-link" href="https://www.chevening.org/" target="_blank" rel="noopener noreferrer">Chevening Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gQGwmz7x" target="_blank" rel="noopener noreferrer">Fulbright Foreign Scholarship</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gE9mwYbd" target="_blank" rel="noopener noreferrer">Australian Government Research Training Program (RTPS)</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/g-gHixeM" target="_blank" rel="noopener noreferrer">MEXT Scholarship Japan</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gzCtHfF8" target="_blank" rel="noopener noreferrer">Chinese Government Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gHyWYN9W" target="_blank" rel="noopener noreferrer">Turkiye Burslari Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gv5zvQGa" target="_blank" rel="noopener noreferrer">Thailand Government Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/g8PGricc" target="_blank" rel="noopener noreferrer">Gates Cambridge Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gjtefSNk" target="_blank" rel="noopener noreferrer">Hungary Government Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gAyAuTHR" target="_blank" rel="noopener noreferrer">Italian Government Scholarships</a></li>
+            <li><a className="beca-link" href="https://lnkd.in/gWSZnEbd" target="_blank" rel="noopener noreferrer">Eiffel Scholarships in France</a></li>
+          </ol>
         </div>
         <div data-aos="fade-up" className="targets">
           <img src={linkedin} alt="" />
