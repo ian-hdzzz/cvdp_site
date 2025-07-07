@@ -31,13 +31,6 @@ const Conocenos = () => {
             <p>Coordinadora de Experiencia Profesional<br/>-Asesoría, atención a alumnos para prácticas voluntarias y estanciasprofesionales<br/>lisbeth.sevilla.serrano@tec.mx</p>
           </div>
         </div>
-        <div data-aos="fade-up" className="target">
-          <img src={clem} alt="" />
-          <div className="info">  
-            <p className='nombre'>Clemente García</p>
-            <p>Coordinador de Desarrollo de Talento<br/>-Asesoría, atención a alumnos para empleo y atención a empresas<br/>cgarciaga@tec.mx</p>
-          </div>
-        </div>
       </div>
     );
   };
