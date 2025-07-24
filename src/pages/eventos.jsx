@@ -7,6 +7,12 @@ import Title from  '../components/title'
 
 const eventos = [
   {
+    titulo: 'Estrategias para la vinculación profesional',
+    fecha: 'Inscríbete antes del 31 de julio',
+    descripcion: 'Aprende herramientas estratégicas para tu proceso de búsqueda de empleo y destaca en el mercado laboral.',
+    imagen: img3, // Reemplaza con la ruta correcta de la imagen del evento
+  },
+  {
     titulo: 'Semanas de Consultoras Nacional',
     fecha: '18 al 22 y 25 al 29 de agosto 2025',
     descripcion: 'Evento exclusivo para estudiantes del Tec de Monterrey y EXATEC para conocer y conectar con consultoras líderes.',
@@ -17,12 +23,6 @@ const eventos = [
     fecha: '1 al 5 de octubre 2025',
     descripcion: 'Profesionales buscando organizaciones que están transformando el mundo. Modalidad presencial y en línea.',
     imagen: img2,
-  },
-  {
-    titulo: 'Estrategias para la vinculación profesional',
-    fecha: 'Inscríbete antes del 31 de julio',
-    descripcion: 'Aprende herramientas estratégicas para tu proceso de búsqueda de empleo y destaca en el mercado laboral.',
-    imagen: img3, // Reemplaza con la ruta correcta de la imagen del evento
   },
 ];
 
