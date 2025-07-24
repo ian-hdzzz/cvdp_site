@@ -50,6 +50,9 @@ function Navbar() {
                     <NavLink to="/home" className={({ isActive }) => (isActive ? "active" : "")}>Inicio</NavLink>
                 </li>
                 <li onClick={closeMenuOnMobile}>
+                    <NavLink to="/eventos" className={({ isActive }) => (isActive ? "active" : "")}>Próximos eventos</NavLink>
+                </li>
+                <li onClick={closeMenuOnMobile}>
                     <NavLink to="/asesorias" className={({ isActive }) => (isActive ? "active" : "")}>Asesoría experiencia profesional</NavLink>
                 </li>
                 {/* <li onClick={closeMenuOnMobile}>

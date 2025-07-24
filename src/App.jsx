@@ -10,6 +10,7 @@ import Challenge from './pages/challenge.jsx';
 import Conocenos from './pages/conocenos.jsx';
 import './App.css';
 import Maraton from './pages/maraton.jsx';
+import Eventos from './pages/eventos.jsx';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/recursos" element={<Recursos />} />
             <Route path="/challenge" element={<Challenge />} />
             <Route path="/conocenos" element={<Conocenos />} />
+          <Route path="/eventos" element={<Eventos />} />
           </Routes>
       </div>
       </>
