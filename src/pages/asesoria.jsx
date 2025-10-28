@@ -142,23 +142,6 @@ const Asesoria = () => {
                 <p>¿No sabes qué camino profesional tomar? Aquí lo definirás y construirás un Plan Estratégico de Vida Profesional. Valídalo con aliados quienes a través de su experiencia te sumarán para lograrlo.</p>
                 </div>
               </div>
-              <div data-aos="fade-up" className="target-semanaTec">
-                <div className="imgSemanaTec"><img src={st2} alt="" /></div>
-                <div className="info">
-
-                <h2>Prepárate para la carrera de tu vida</h2>
-                <p>Adquiere herramientas que necesitarás para lograr tus objetivos profesionales y personales. Podrás identificar aquellos elementos de liderazgo que te caracterizan y destacar de otras personas. Podrás establecer metas para tu éxito profesional y el camino para llegar a ellas.</p>
-                </div>
-              </div>
-              <div data-aos="fade-up" className="target-semanaTec">
-                <div className="imgSemanaTec"><img src={st3} alt="" /></div>
-                <div className="info">
-
-                <h2>El arte de comunicar mi marca</h2>
-                <p>¿Tienes claro lo que quieres profesionalmente? Genera tu propia marca personal para destacar en el ámbito profesional.</p>
-              </div>
-            </div>
-              </div>
           </div>
           <div  className="contenedor-extras emprendimiento">
             <h1>Talleres de Emprendimiento</h1>
