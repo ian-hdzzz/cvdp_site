@@ -110,27 +110,6 @@ const Asesoria = () => {
             </div>
             <div className="button-agendar"><a href="https://outlook-sdf.office.com/bookwithme/user/4eab1b9f7cc64071be0c3e0368f0c227@tec.mx?anonymous&ep=plink">AGENDAR</a></div>
           </div>
-        </div>
-          <div className="contenedor-materias">
-            <h1>Materias impartidas por el CVDP</h1>
-            <div className="gradient"></div>
-            <div data-aos="fade-up" className="materias">
-              <div data-aos="fade-up" className="materia materia-uno">
-                <div className="info ">
-                <h2>Construyendo mi marca profesional</h2>
-                <p>Identifica tus fortalezas y lo que te hace diferente de los demás para potencializar tu marca profesional.</p>
-                </div>
-                <img className='teus2' src={teus2} alt="" />
-              </div>
-              <div data-aos="fade-up" className="materia materia-dos">
-                <div className="info ">
-                <h2>Estrategías para tu vinculación profesional</h2>
-                <p>Conocer las herramientas y estrategias más efectivas para tu proceso de búsqueda de empleo que te hagan alcanzar las mejores oportunidades y destacar dentro del mercado laboral.</p>
-                </div>
-                <img className='teus3' src={teus3} alt="" />
-              </div>
-            </div>
-          </div>
           <div  className="contenedor-extras semanaTec">
             <h1>Semanas TEC</h1>
             <div className="gradient"></div>
